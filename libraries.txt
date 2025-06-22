@@ -1,0 +1,6 @@
+# Wokwi Library List
+TinyGPSPlus
+DHT sensor library for ESPx
+WiFi
+HttpClient
+ArduinoJson

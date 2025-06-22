@@ -1,0 +1,15 @@
+{
+  "name": "gps-neo6m",
+  "author": "upc-iot-BicasTeam-embedded",
+  "pins": [
+    "GND",
+    "TX",
+    "RX",
+    "VCC",
+    "",
+    "",
+    "",
+    ""
+  ],
+  "controls": []
+}

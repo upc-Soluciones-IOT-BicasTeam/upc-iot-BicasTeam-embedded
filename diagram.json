@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "author": "upc-iot-BicasTeam-embedded",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-esp32-devkit-v1", "id": "esp", "top": 0, "left": 0, "attrs": {} },
+    { "type": "wokwi-dht22", "id": "dht1", "top": -18.9, "left": 148.2, "attrs": {} },
+    { "type": "chip-gps-neo6m", "id": "gps", "top": 105.6, "left": 163.2, "attrs": {} }
+  ],
+  "connections": [
+    [ "esp:TX0", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX0", "$serialMonitor:TX", "", [] ],
+    [ "gps:GND", "esp:GND.1", "black", [ "h-38.4", "v28.8" ] ],
+    [ "gps:VCC", "esp:3V3", "red", [ "h-9.6", "v9.6", "h-9.6" ] ],
+    [ "gps:RX", "esp:TX2", "blue", [ "h-28.8", "v-38.4", "h9.6" ] ],
+    [ "gps:TX", "esp:RX2", "orange", [ "h-48", "v-19.2" ] ],
+    [ "dht1:SDA", "esp:D15", "green", [ "v0" ] ],
+    [ "dht1:VCC", "esp:3V3", "red", [ "v0" ] ],
+    [ "dht1:GND", "esp:GND.1", "black", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}
